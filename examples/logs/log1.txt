@@ -1,0 +1,396 @@
+vcs -sverilog -timescale=1ns/1ns +acc +vpi +incdir+../lib/uvm-1.1d/src ../lib/uvm-1.1d/src/uvm.sv ../lib/uvm-1.1d/src/dpi/uvm_dpi.cc -CFLAGS -DVCS +incdir+../env \
+	+incdir+../utils \
+	-f ../lib/bin_eth_pkt/bin_eth_pkt.f \
+	../env/hello_world.sv
+                         Chronologic VCS (TM)
+      Version O-2018.09-SP2-2_Full64 -- Mon Aug 21 23:45:53 2023
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEPRECATED_OPTION] Deprecated option used
+  The specified option '+acc' is deprecated.
+  Please use '-debug_access+r+w+nomemcbk -debug_region+cell' instead.
+
+Parsing design file '../lib/uvm-1.1d/src/uvm.sv'
+Parsing included file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_version_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_message_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_phase_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_object_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_printer_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_tlm_defines.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh'.
+Back to file '../lib/uvm-1.1d/src/macros/uvm_tlm_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_sequence_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_callback_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_reg_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '../lib/uvm-1.1d/src/macros/uvm_deprecated_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '../lib/uvm-1.1d/src/dpi/uvm_dpi.svh'.
+Parsing included file '../lib/uvm-1.1d/src/dpi/uvm_hdl.svh'.
+Back to file '../lib/uvm-1.1d/src/dpi/uvm_dpi.svh'.
+Parsing included file '../lib/uvm-1.1d/src/dpi/uvm_svcmd_dpi.svh'.
+Back to file '../lib/uvm-1.1d/src/dpi/uvm_dpi.svh'.
+Parsing included file '../lib/uvm-1.1d/src/dpi/uvm_regex.svh'.
+Back to file '../lib/uvm-1.1d/src/dpi/uvm_dpi.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_version.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_object_globals.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_misc.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_object.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_pool.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_queue.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_factory.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_registry.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_spell_chkr.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_resource.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/deprecated/uvm_resource_converter.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_resource_specializations.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_resource_db.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_config_db.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_printer.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_comparer.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_packer.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_recorder.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_event_callback.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_event.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_barrier.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_callback.svh'.
+Parsing included file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_callback.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_report_catcher.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_report_server.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_report_handler.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_report_object.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_transaction.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_phase.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_domain.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_bottomup_phase.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_topdown_phase.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_task_phase.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_common_phases.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_runtime_phases.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_component.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_root.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_component.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_objection.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_heartbeat.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_globals.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_cmdline_processor.svh'.
+Back to file '../lib/uvm-1.1d/src/base/uvm_base.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_sqr_ifs.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/base/uvm_port_base.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_imps.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_ports.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_exports.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_analysis_port.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_tlm_fifos.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm1/uvm_sqr_connections.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_pair.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_policies.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_in_order_comparator.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_algorithmic_comparator.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_random_stimulus.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_subscriber.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_monitor.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_driver.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_push_driver.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_scoreboard.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_agent.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_env.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '../lib/uvm-1.1d/src/comps/uvm_test.svh'.
+Back to file '../lib/uvm-1.1d/src/comps/uvm_comps.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequence_item.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequencer_base.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequencer_param_base.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequencer.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_push_sequencer.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequence_base.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequence.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequence_library.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '../lib/uvm-1.1d/src/seq/uvm_sequence_builtin.svh'.
+Back to file '../lib/uvm-1.1d/src/seq/uvm_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_defines.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_time.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_imps.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_ports.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_exports.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '../lib/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_item.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_adapter.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_predictor.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_sequence.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_cbs.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_backdoor.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_field.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_vreg_field.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_indirect.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_fifo.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_file.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_mem_mam.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_vreg.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_mem.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_map.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/uvm_reg_block.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '../lib/uvm-1.1d/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '../lib/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Back to file '../lib/uvm-1.1d/src/uvm_pkg.sv'.
+Back to file '../lib/uvm-1.1d/src/uvm.sv'.
+Parsing design file '..//lib/bin_eth_pkt/bin_eth_pkt.sv'
+Parsing design file '..//lib/bin_eth_pkt/pkt_item.sv'
+Parsing included file '..//lib/bin_eth_pkt/bin_eth_pkt.sv'.
+Back to file '..//lib/bin_eth_pkt/pkt_item.sv'.
+Parsing design file '../env/hello_world.sv'
+Parsing included file '../lib/uvm-1.1d/src/uvm_macros.svh'.
+Back to file '../env/hello_world.sv'.
+Parsing included file '../env/top.sv'.
+Parsing included file '..//lib/bin_eth_pkt/bin_eth_pkt.sv'.
+Back to file '../env/top.sv'.
+Back to file '../env/hello_world.sv'.
+Top Level Modules:
+       hello_world
+TimeScale is 1 ns / 1 ns
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+make[1]: Entering directory '/mnt/mydata/eth-uvm/sim/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic  -Wl,-rpath=/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib -L/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib  uvm_dpi.o     _15448_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so    rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lnuma -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o    /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/mnt/mydata/eth-uvm/sim/csrc'
+CPU time: 3.051 seconds to compile + .147 seconds to elab + .249 seconds to link
+./simv +UVM_VERBOSITY=UVM_LOW -l vcs.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2-2_Full64; Runtime version O-2018.09-SP2-2_Full64;  Aug 21 23:46 2023
+----------------------------------------------------------------
+UVM-1.1d
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0 ns: reporter [RNTST] Running test ...
+UVM_INFO @ 0 ns: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------
+Name                Type           Size  Value  
+------------------------------------------------
+top                 top            -     -      
+  recording_detail  uvm_verbosity  32    UVM_LOW
+------------------------------------------------
+
+UVM_INFO ../env/top.sv(31) @ 0 ns: top [bin_eth_pkt] 
+-----------------------------------------------------------------
+Name                        Type             Size  Value         
+-----------------------------------------------------------------
+bin_eth_pkt                 bin_eth_pkt      -     -             
+  src_port                  integral         2     'h0           
+  dst_port                  integral         2     'h0           
+  dmac                      integral         48    'h0           
+  smac                      integral         48    'h0           
+  is_with_vlan_tag          integral         2     'h0           
+  vlan_tag                  VLAN_Tag         -     -             
+    tpid                    integral         16    'h0           
+    pri                     integral         3     'h0           
+    cfi                     integral         1     'h0           
+    vid                     integral         12    'h0           
+  ethertype_or_length_data  integral         16    'h0           
+  llc                       LLC              -     -             
+    llc_dsap                integral         8     'h0           
+    llc_ssap                integral         8     'h0           
+    llc_control             integral         8     'h0           
+  snap                      SNAP             -     -             
+    oui                     integral         24    'h0           
+    protocol_id             integral         16    'h0           
+  expect_pack_type          pkt_pack_type_e  3     PKT_PT_DEFAULT
+  expect_ether_type         pkt_ethertype_e  8     PKT_ET_DEFAULT
+  pkt_pack_type             pkt_pack_type_e  3     PKT_PT_DEFAULT
+  pkt_ether_type            pkt_ethertype_e  8     PKT_ET_DEFAULT
+  length                    integral         32    'd0           
+  expect_pkt_len            integral         32    'd0           
+  pkt_len                   integral         32    'd0           
+-----------------------------------------------------------------
+
+UVM_INFO ../lib/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1000 ns: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    4
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[bin_eth_pkt]     1
+$finish called from file "../lib/uvm-1.1d/src/base/uvm_root.svh", line 430.
+$finish at simulation time 1000 ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1000 ns
+CPU Time:      0.180 seconds;       Data structure size:   0.3Mb
+Mon Aug 21 23:46:14 2023
